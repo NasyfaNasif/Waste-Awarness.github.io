@@ -1,0 +1,308 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+ul {
+    list-style: none;
+}
+ul li {
+    text-decoration: none;
+}
+body {
+    font-family: Arial, sans-serif;
+}
+header {
+    margin: 20px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+header h1 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #000;
+}
+header h1 img {
+    width: 20px;
+}
+header nav {
+    justify-content: flex-end;
+    display: flex;
+    margin-top: 10px;
+    padding-left: 70%;
+    margin-right: 60px;
+    margin-bottom: -40px;
+}
+header nav ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    padding-right: 5px;
+}
+header nav ul li {
+    margin-right: 10px;
+    color: #000;
+}
+header nav ul li a {
+    display: flex;
+    margin-left: 10px;
+}
+header nav ul li a img {
+    margin: 12px;
+}
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    visibility: hidden;
+}
+.mobile {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: right;
+    align-items: center;
+    z-index: 100;
+    visibility: hidden;
+
+
+}
+
+.mobile ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    padding-right: 5px;
+}
+.mobile ul li {
+    margin-right: 10px;
+    color: #000;
+
+}
+.mobile ul li a {
+    margin-left: 10px;
+
+}
+#hero {
+}
+#hero div.heros {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+#hero div.heros table {
+    width: 100%;
+}
+#hero div.heros table thead {
+    background-color: #f2f2f2;
+}
+#hero div.heros table tbody {
+    border-bottom: 1px solid #ddd;
+}
+#hero div.heros table tr {
+    cursor: pointer;
+}
+
+#hero div.heros table td {
+    padding: 15px;
+}
+#hero div.heros table th {
+    text-align: left;
+    padding: 15px;
+}
+#spotlight {
+    background-color: #f2f2f2;
+    margin-top: 100px;
+    text-align: center;
+}
+#spotlight div.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding-left: 50%;
+
+}
+#spotlight div.content ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+#spotlight div.content ul li {
+}
+#spotlight div.content ul li h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+#spotlight div.content ul li p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+#spotlight div.content ul li p b {
+    font-size: 18px;
+    color: aqua;
+}
+
+#spotlight div.img-container ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 30px;
+}
+#spotlight ul li div.img-container img {
+    width: 100%;
+}
+#spotlight div.content ul li button {
+    font-size: 18px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+footer {
+    background-color: #b10e0e;
+    padding: 20px;
+    text-align: center;
+    margin-top: 100px;
+}
+footer ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+footer ul li {
+    margin-right: 10px;
+}
+footer ul li a {
+    color: #000;
+}
+footer div.social-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+footer div.social-media a {
+    margin-right: 10px;
+}
+footer div.social-media a img {
+    width: 30px;
+}
+@media all and (max-width: 2560px) {}
+@media all and (min-width: 1440px) and (max-width:2559) {
+    #hero div.heros table td {
+        padding: 41px;
+    }
+}
+@media all and (min-width: 1024px) and (max-width:1439) {
+    header nav {
+        justify-content: flex-end;
+        display: flex;
+        margin-top: -6px;
+        padding-left: 34%;
+        margin-right: 32px;
+        margin-bottom: -40px;
+    }
+}
+@media all and (min-width: 768px) and (max-width:1023) {
+    header nav {
+        justify-content: flex-end;
+        display: flex;
+        margin-top: -6px;
+        padding-left: 34%;
+        margin-right: 32px;
+        margin-bottom: -40px;
+    }
+    #hero div.heros table td {
+        padding: 24px;
+    }
+}
+@media all and (min-width: 425px) and (max-width:767px) {
+    header nav {
+        justify-content: flex-end;
+        display: flex;
+        margin-top: -6px;
+        padding-left: 34%;
+        margin-right: 32px;
+        margin-bottom: -40px;
+    }
+    #hero div.heros table td {
+        padding: 24px;
+    }
+    #spotlight div.content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        padding-left: 12%;
+    }
+    header nav ul li a {
+        display: flex;
+        margin-left: 0px;
+    }
+    #hero div.heros table td {
+        padding: 23px;
+    }
+}
+@media all and (min-width: 375px) and (max-width:424px) {
+    header nav {
+        justify-content: flex-end;
+        display: flex;
+        margin-top: -6px;
+        padding-left: 34%;
+        margin-right: 32px;
+        margin-bottom: -40px;
+    }
+    #hero div.heros table td {
+        padding: 24px;
+    }
+    #spotlight div.content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        padding-left: 12%;
+    }
+    header nav ul li a {
+        display: flex;
+        margin-left: 0px;
+    }
+    #hero div.heros table td {
+        padding: 23px;
+    }
+    #hero div.heros table td {
+        padding: 6px;
+    }
+}
+@media all and (min-width: 320px) and (max-width:375px) {
+    header nav ul li a img {
+        margin: -18px;
+    }
+    #hero div.heros table td {
+        padding: 10px;
+    }
+}
